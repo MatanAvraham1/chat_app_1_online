@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 72" width="96" height="72">
+	<title>06_chatting</title>
+	<defs>
+		<image width="24" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAAAXNSR0IArs4c6QAAAWZJREFUOE+1lFFOwkAURe/rgHxYIkthC0QxQT6MK9AdyA5kCd2BwwqcfgCJ1gArgCXgDkrQBBLgmQHGYFvbqej7m8zMPS937hvCPxdVngaVdWntbRjjoiP8sFGb/iWTtJiBMHDLwJTAipk7H83LybGwLcBUuRdIDTFrAyPGcN6s+7+BfQNoAbf70gbRQ4JYyAzlgFUeWAyghcv91ztmfkzpOAQwZIIqLoQf3tT0OrESAQcQD8CZhTVqC4MYRUPyI0CLnnafq0TO0BJi+pgwQ5pEpgKOgICAjliKViZAR3hVWg8AVC2smoHZKzgFaazKBLj9QIFxnSZOwBuI2mLhqOiDpwKicxGH0IjA3vzqQuVOkdsLdILuky5qf5lYvjfqOgCplWcOZgBkgYSX57+KAaJDpv3dgLzi0pFpA2Vl0T73491hGhFBzhvnMsuGjADstvfiAwJ8W39twF/f9epk1TrMr81lmzOfRJOioWPxbSIAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="06_chatting">
+		<g id="type messsage">
+			<use id="Send icon" href="#img1" transform="matrix(4,0,0,4,0,0)"/>
+		</g>
+	</g>
+</svg>
