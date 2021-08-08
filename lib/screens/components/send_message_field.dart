@@ -13,8 +13,6 @@ class SendMessageField extends StatefulWidget {
 }
 
 class _SendMessageFieldState extends State<SendMessageField> {
-  String messageContent = "";
-
   late TextEditingController _textEditingController;
 
   @override
@@ -43,9 +41,6 @@ class _SendMessageFieldState extends State<SendMessageField> {
               Expanded(
                 child: TextField(
                   controller: _textEditingController,
-                  onChanged: (value) {
-                    messageContent = value;
-                  },
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontFamily: "CircularStd",
@@ -84,11 +79,15 @@ class _SendMessageFieldState extends State<SendMessageField> {
                   ),
                   GestureDetector(
                     onTap: () async {
-                      await OnlineDBService.sendMessage(
-                          Message.byMe(content: messageContent), widget.chatId);
-                      setState(() {
-                        _textEditingController.clear();
-                      });
+                      if (_textEditingController.value.text != "") {
+                        await OnlineDBService.sendMessage(
+                            Message.byMe(
+                                content: _textEditingController.value.text),
+                            widget.chatId);
+                        setState(() {
+                          _textEditingController.clear();
+                        });
+                      }
                     },
                     child: SvgPicture.asset(
                       "assets/images/send.svg",
